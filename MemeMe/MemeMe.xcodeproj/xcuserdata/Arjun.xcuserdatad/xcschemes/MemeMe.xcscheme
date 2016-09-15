@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0730"
+   LastUpgradeVersion = "0800"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DC8888221D86BEC0003CD03C"
+               BlueprintIdentifier = "DC0D6BB21D8B222300AF44EE"
                BuildableName = "MemeMe.app"
                BlueprintName = "MemeMe"
                ReferencedContainer = "container:MemeMe.xcodeproj">
@@ -32,7 +32,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DC8888221D86BEC0003CD03C"
+            BlueprintIdentifier = "DC0D6BB21D8B222300AF44EE"
             BuildableName = "MemeMe.app"
             BlueprintName = "MemeMe"
             ReferencedContainer = "container:MemeMe.xcodeproj">
@@ -55,7 +55,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DC8888221D86BEC0003CD03C"
+            BlueprintIdentifier = "DC0D6BB21D8B222300AF44EE"
             BuildableName = "MemeMe.app"
             BlueprintName = "MemeMe"
             ReferencedContainer = "container:MemeMe.xcodeproj">
@@ -74,7 +74,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DC8888221D86BEC0003CD03C"
+            BlueprintIdentifier = "DC0D6BB21D8B222300AF44EE"
             BuildableName = "MemeMe.app"
             BlueprintName = "MemeMe"
             ReferencedContainer = "container:MemeMe.xcodeproj">
