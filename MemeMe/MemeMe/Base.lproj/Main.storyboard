@@ -37,22 +37,24 @@
                             </toolbar>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gHp-En-ek3">
                                 <items>
-                                    <barButtonItem systemItem="action" id="m8z-MX-dbg"/>
+                                    <barButtonItem systemItem="action" id="m8z-MX-dbg">
+                                        <connections>
+                                            <action selector="actionButtonTapped:" destination="BYZ-38-t0r" id="qP7-PG-rUJ"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="YHh-Zv-2bn"/>
                                     <barButtonItem systemItem="cancel" id="DnA-40-9dV"/>
                                 </items>
                             </toolbar>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AmP-WG-r33"/>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="TOP" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vIL-a5-EFv">
-                                <frame key="frameInset" minX="139" minY="57" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="BOTTOM" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xsR-v1-nJa">
+                                <frame key="frameInset" minX="16" minY="584" width="343" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="BOTTOM" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xsR-v1-nJa">
-                                <frame key="frameInset" minX="139" minY="584" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="TOP" textAlignment="center" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="vIL-a5-EFv">
+                                <frame key="frameInset" minX="16" minY="44" width="343" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
@@ -61,15 +63,23 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="gHp-En-ek3" secondAttribute="trailing" id="0Rc-uW-r5O"/>
+                            <constraint firstItem="vIL-a5-EFv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="0yx-9C-r3b"/>
                             <constraint firstItem="AmP-WG-r33" firstAttribute="top" secondItem="gHp-En-ek3" secondAttribute="bottom" id="1Ro-fK-9ia"/>
                             <constraint firstAttribute="trailing" secondItem="AmP-WG-r33" secondAttribute="trailing" id="4i9-2D-wnh"/>
+                            <constraint firstItem="xsR-v1-nJa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="E9H-UQ-Z8K"/>
                             <constraint firstItem="gHp-En-ek3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="EHH-1f-vtP"/>
                             <constraint firstItem="gHp-En-ek3" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="OYE-C7-Cj1"/>
+                            <constraint firstItem="vIL-a5-EFv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QI6-33-MS9"/>
+                            <constraint firstAttribute="trailing" secondItem="vIL-a5-EFv" secondAttribute="trailing" constant="16" id="RaJ-u0-Evh"/>
+                            <constraint firstItem="j7z-Cj-gMy" firstAttribute="top" secondItem="xsR-v1-nJa" secondAttribute="bottom" id="WLs-uy-ICS"/>
                             <constraint firstAttribute="trailing" secondItem="j7z-Cj-gMy" secondAttribute="trailing" id="WxV-3r-Rfi"/>
                             <constraint firstItem="j7z-Cj-gMy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="bH6-MN-o2g"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="j7z-Cj-gMy" secondAttribute="bottom" id="c4W-p7-RJx"/>
                             <constraint firstItem="AmP-WG-r33" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ejL-bx-AhZ"/>
+                            <constraint firstItem="xsR-v1-nJa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="p7z-PF-W7s"/>
+                            <constraint firstItem="vIL-a5-EFv" firstAttribute="top" secondItem="gHp-En-ek3" secondAttribute="bottom" id="uKC-15-0S9"/>
                             <constraint firstItem="j7z-Cj-gMy" firstAttribute="top" secondItem="AmP-WG-r33" secondAttribute="bottom" id="vER-p6-0Eo"/>
+                            <constraint firstAttribute="trailing" secondItem="xsR-v1-nJa" secondAttribute="trailing" constant="16" id="x6Q-kg-MhS"/>
                         </constraints>
                     </view>
                     <connections>

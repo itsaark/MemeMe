@@ -34,5 +34,11 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+    <!-- 🖼 Photo Library -->
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>MemeMe wants to access your photos</string>
+    <!-- 📷 Camera -->
+    <key>NSCameraUsageDescription</key>
+    <string>MemeMe wants to access your camera</string>
 </dict>
 </plist>
