@@ -17,6 +17,9 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     @IBOutlet weak var imagePickerView: UIImageView!
     
     @IBOutlet weak var cameraButton: UIBarButtonItem!
+    
+    @IBOutlet weak var shareButton: UIBarButtonItem!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,6 +52,12 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         cameraButton.isEnabled = UIImagePickerController.isSourceTypeAvailable(.camera)
         subscribeToKeyboardNotifications()
         subscribeToKeyboardHideNotifications()
+        if imagePickerView.image == nil {
+            
+            shareButton.isEnabled = false
+        }else {
+            shareButton.isEnabled = true
+        }
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -142,6 +151,18 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         
     }
     
+    func textFieldDidEndEditing(_ textField: UITextField, reason: UITextFieldDidEndEditingReason) {
+        
+        if textField == topText && topText.text == "" {
+            
+            topText.text = "TOP"
+            
+        } else if textField == bottomText && bottomText.text == ""{
+            
+            bottomText.text = "BOTTOM"
+        }
+    }
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         
         if textField == topText || textField ==  bottomText {
@@ -155,6 +176,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     func generateMemedImage() -> UIImage {
         
         // TODO: Hide toolbar and navbar
+        self.navigationController?.setToolbarHidden(true, animated: true)
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
         
         // Render view to an image
         UIGraphicsBeginImageContext(self.view.frame.size)
@@ -162,7 +185,9 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         let memedImage : UIImage = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
-        // TODO:  Show toolbar and navbar       
+        // TODO:  Show toolbar and navbar    
+        self.navigationController?.setToolbarHidden(false, animated: true)
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
         
         return memedImage
     }
@@ -173,10 +198,32 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         
         let memedImage = generateMemedImage()
         
-        func save() {
-            //Create the meme
-            let meme = Meme(topText: topText.text, bottomText: bottomText.text, image: imagePickerView.image, memedImage: memedImage)
+        let activityVC = UIActivityViewController(activityItems: [memedImage], applicationActivities: nil)
+        activityVC.excludedActivityTypes = [UIActivityType.print, UIActivityType.postToWeibo, UIActivityType.copyToPasteboard, UIActivityType.addToReadingList, UIActivityType.postToVimeo]
+        
+        self.present(activityVC, animated: true) { 
+            
+            activityVC.completionWithItemsHandler = { activity, success, items, error in
+                
+                if success {
+                    
+                    func save() {
+                        //Create the meme
+                        let meme = Meme(topText: self.topText.text, bottomText: self.bottomText.text, image: self.imagePickerView.image, memedImage: memedImage)
+                    }
+                    
+                    self.dismiss(animated: true, completion: nil)
+                }
+                
+            }
         }
+     
+    }
+    
+    
+    @IBAction func cancelButtonTapped(_ sender: AnyObject) {
+        
+        imagePickerView.image = nil
     }
     
 }

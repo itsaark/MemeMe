@@ -43,7 +43,11 @@
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="YHh-Zv-2bn"/>
-                                    <barButtonItem systemItem="cancel" id="DnA-40-9dV"/>
+                                    <barButtonItem systemItem="cancel" id="DnA-40-9dV">
+                                        <connections>
+                                            <action selector="cancelButtonTapped:" destination="BYZ-38-t0r" id="T7M-yA-V6S"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AmP-WG-r33"/>
@@ -86,6 +90,7 @@
                         <outlet property="bottomText" destination="xsR-v1-nJa" id="62h-bo-HNe"/>
                         <outlet property="cameraButton" destination="R6k-qL-dJB" id="OES-wc-xKA"/>
                         <outlet property="imagePickerView" destination="AmP-WG-r33" id="ptT-yR-O2D"/>
+                        <outlet property="shareButton" destination="m8z-MX-dbg" id="efc-qw-gBF"/>
                         <outlet property="topText" destination="vIL-a5-EFv" id="6Wf-cE-8mW"/>
                     </connections>
                 </viewController>
