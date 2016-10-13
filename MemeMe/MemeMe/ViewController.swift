@@ -22,6 +22,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
 
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
@@ -36,6 +37,13 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         
         topText.textAlignment = .center
         bottomText.textAlignment = .center
+        
+        
+    }
+    
+    override var prefersStatusBarHidden: Bool {
+        
+        return true
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -58,6 +66,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         }else {
             shareButton.isEnabled = true
         }
+        
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -80,14 +89,26 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     }
     
     func keyboardWillShow(notification: NSNotification) {
+        
         if bottomText.isFirstResponder {
-        view.frame.origin.y -= getKeyboardHeight(notification: notification)
+            
+            if self.view.frame.origin.y == 0 {
+                
+                self.view.frame.origin.y -= getKeyboardHeight(notification: notification)
+            }
+        
         }
     }
     
     func keyboardWillHide(notification: NSNotification) {
+        
         if bottomText.isFirstResponder {
-        view.frame.origin.y = 0
+            
+            if self.view.frame.origin.y != 0 {
+                
+                self.view.frame.origin.y = 0
+            }
+        
         }
     }
     
@@ -101,7 +122,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     func getKeyboardHeight(notification: NSNotification) -> CGFloat {
         let userInfo = notification.userInfo
-        let keyboardSize = userInfo![UIKeyboardFrameEndUserInfoKey] as! NSValue // of CGRect
+        let keyboardSize = userInfo![UIKeyboardFrameBeginUserInfoKey] as! NSValue // of CGRect
         return keyboardSize.cgRectValue.height
     }
 
@@ -224,6 +245,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     @IBAction func cancelButtonTapped(_ sender: AnyObject) {
         
         imagePickerView.image = nil
+        topText.text = "TOP"
+        bottomText.text = "BOTTOM"
     }
     
 }
