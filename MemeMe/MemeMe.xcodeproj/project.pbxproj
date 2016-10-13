@@ -13,6 +13,8 @@
 		DC0D6BBF1D8B222300AF44EE /* MemeMe.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DC0D6BBD1D8B222300AF44EE /* MemeMe.xcdatamodeld */; };
 		DC0D6BC11D8B222300AF44EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC0D6BC01D8B222300AF44EE /* Assets.xcassets */; };
 		DC0D6BC41D8B222300AF44EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC0D6BC21D8B222300AF44EE /* LaunchScreen.storyboard */; };
+		DC64B4ED1D981EA4003D2450 /* Meme.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC64B4EC1D981EA4003D2450 /* Meme.swift */; };
+		DC8770AA1D8BB4AE008B7437 /* TextAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8770A91D8BB4AE008B7437 /* TextAttributes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		DC0D6BC01D8B222300AF44EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC0D6BC31D8B222300AF44EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC0D6BC51D8B222300AF44EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC64B4EC1D981EA4003D2450 /* Meme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meme.swift; sourceTree = "<group>"; };
+		DC8770A91D8BB4AE008B7437 /* TextAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextAttributes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				DC0D6BC21D8B222300AF44EE /* LaunchScreen.storyboard */,
 				DC0D6BC51D8B222300AF44EE /* Info.plist */,
 				DC0D6BBD1D8B222300AF44EE /* MemeMe.xcdatamodeld */,
+				DC8770A91D8BB4AE008B7437 /* TextAttributes.swift */,
+				DC64B4EC1D981EA4003D2450 /* Meme.swift */,
 			);
 			path = MemeMe;
 			sourceTree = "<group>";
@@ -142,7 +148,9 @@
 			files = (
 				DC0D6BBF1D8B222300AF44EE /* MemeMe.xcdatamodeld in Sources */,
 				DC0D6BB91D8B222300AF44EE /* ViewController.swift in Sources */,
+				DC64B4ED1D981EA4003D2450 /* Meme.swift in Sources */,
 				DC0D6BB71D8B222300AF44EE /* AppDelegate.swift in Sources */,
+				DC8770AA1D8BB4AE008B7437 /* TextAttributes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +312,7 @@
 				DC0D6BCA1D8B222300AF44EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
