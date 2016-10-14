@@ -20,6 +20,10 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     @IBOutlet weak var shareButton: UIBarButtonItem!
     
+    @IBOutlet weak var topToolBar: UIToolbar!
+    
+    @IBOutlet weak var bottomToolBar: UIToolbar!
+    
 
     override func viewDidLoad() {
         
@@ -197,8 +201,9 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     func generateMemedImage() -> UIImage {
         
         // TODO: Hide toolbar and navbar
-        self.navigationController?.setToolbarHidden(true, animated: true)
-        self.navigationController?.setNavigationBarHidden(true, animated: true)
+        self.topToolBar.isHidden = true
+        self.bottomToolBar.isHidden = true
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
         
         // Render view to an image
         UIGraphicsBeginImageContext(self.view.frame.size)
@@ -206,9 +211,13 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         let memedImage : UIImage = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
-        // TODO:  Show toolbar and navbar    
-        self.navigationController?.setToolbarHidden(false, animated: true)
-        self.navigationController?.setNavigationBarHidden(false, animated: true)
+        UIImageWriteToSavedPhotosAlbum(memedImage, nil, nil, nil)
+
+        
+        // TODO:  Show toolbar and navbar
+        self.topToolBar.isHidden = false
+        self.bottomToolBar.isHidden = false
+        self.navigationController?.setNavigationBarHidden(false, animated: false)
         
         return memedImage
     }

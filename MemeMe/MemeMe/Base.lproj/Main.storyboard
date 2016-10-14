@@ -57,8 +57,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="TOP" textAlignment="center" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="vIL-a5-EFv">
-                                <frame key="frameInset" minX="16" minY="44" width="343" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="TOP" textAlignment="center" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="vIL-a5-EFv">
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
@@ -88,10 +87,12 @@
                     </view>
                     <connections>
                         <outlet property="bottomText" destination="xsR-v1-nJa" id="62h-bo-HNe"/>
+                        <outlet property="bottomToolBar" destination="j7z-Cj-gMy" id="hos-2F-leZ"/>
                         <outlet property="cameraButton" destination="R6k-qL-dJB" id="OES-wc-xKA"/>
                         <outlet property="imagePickerView" destination="AmP-WG-r33" id="ptT-yR-O2D"/>
                         <outlet property="shareButton" destination="m8z-MX-dbg" id="efc-qw-gBF"/>
                         <outlet property="topText" destination="vIL-a5-EFv" id="6Wf-cE-8mW"/>
+                        <outlet property="topToolBar" destination="gHp-En-ek3" id="Uxz-cj-Zrb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
