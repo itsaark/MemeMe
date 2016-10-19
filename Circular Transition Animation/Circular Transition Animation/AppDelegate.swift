@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  MemeMe
+//  Circular Transition Animation
 //
-//  Created by Arjun Kodur on 9/16/16.
+//  Created by Arjun Kodur on 10/17/16.
 //  Copyright © 2016 Arjun Kodur. All rights reserved.
 //
 
@@ -13,7 +13,7 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    var memes = [Meme]()
+
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -53,7 +53,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
          application to it. This property is optional since there are legitimate
          error conditions that could cause the creation of the store to fail.
         */
-        let container = NSPersistentContainer(name: "MemeMe")
+        let container = NSPersistentContainer(name: "Circular_Transition_Animation")
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
                 // Replace this implementation with code to handle the error appropriately.

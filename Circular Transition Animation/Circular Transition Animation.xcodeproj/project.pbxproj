@@ -1,0 +1,333 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DC5F11921DB67E1F00922699 /* CircularTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5F11911DB67E1F00922699 /* CircularTransition.swift */; };
+		DC8C48231DB544CD00E628CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8C48221DB544CD00E628CB /* AppDelegate.swift */; };
+		DC8C48251DB544CD00E628CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8C48241DB544CD00E628CB /* ViewController.swift */; };
+		DC8C48281DB544CD00E628CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC8C48261DB544CD00E628CB /* Main.storyboard */; };
+		DC8C482B1DB544CD00E628CB /* Circular_Transition_Animation.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DC8C48291DB544CD00E628CB /* Circular_Transition_Animation.xcdatamodeld */; };
+		DC8C482D1DB544CD00E628CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC8C482C1DB544CD00E628CB /* Assets.xcassets */; };
+		DC8C48301DB544CD00E628CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC8C482E1DB544CD00E628CB /* LaunchScreen.storyboard */; };
+		DC8C48381DB5485600E628CB /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8C48371DB5485600E628CB /* SecondViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DC5F11911DB67E1F00922699 /* CircularTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularTransition.swift; sourceTree = "<group>"; };
+		DC8C481F1DB544CD00E628CB /* Circular Transition Animation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Circular Transition Animation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC8C48221DB544CD00E628CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DC8C48241DB544CD00E628CB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DC8C48271DB544CD00E628CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DC8C482A1DB544CD00E628CB /* Circular_Transition_Animation.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Circular_Transition_Animation.xcdatamodel; sourceTree = "<group>"; };
+		DC8C482C1DB544CD00E628CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DC8C482F1DB544CD00E628CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DC8C48311DB544CD00E628CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC8C48371DB5485600E628CB /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DC8C481C1DB544CD00E628CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DC8C48161DB544CD00E628CB = {
+			isa = PBXGroup;
+			children = (
+				DC8C48211DB544CD00E628CB /* Circular Transition Animation */,
+				DC8C48201DB544CD00E628CB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DC8C48201DB544CD00E628CB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC8C481F1DB544CD00E628CB /* Circular Transition Animation.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DC8C48211DB544CD00E628CB /* Circular Transition Animation */ = {
+			isa = PBXGroup;
+			children = (
+				DC8C48221DB544CD00E628CB /* AppDelegate.swift */,
+				DC8C48241DB544CD00E628CB /* ViewController.swift */,
+				DC8C48261DB544CD00E628CB /* Main.storyboard */,
+				DC8C482C1DB544CD00E628CB /* Assets.xcassets */,
+				DC8C482E1DB544CD00E628CB /* LaunchScreen.storyboard */,
+				DC8C48311DB544CD00E628CB /* Info.plist */,
+				DC8C48291DB544CD00E628CB /* Circular_Transition_Animation.xcdatamodeld */,
+				DC8C48371DB5485600E628CB /* SecondViewController.swift */,
+				DC5F11911DB67E1F00922699 /* CircularTransition.swift */,
+			);
+			path = "Circular Transition Animation";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DC8C481E1DB544CD00E628CB /* Circular Transition Animation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC8C48341DB544CD00E628CB /* Build configuration list for PBXNativeTarget "Circular Transition Animation" */;
+			buildPhases = (
+				DC8C481B1DB544CD00E628CB /* Sources */,
+				DC8C481C1DB544CD00E628CB /* Frameworks */,
+				DC8C481D1DB544CD00E628CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Circular Transition Animation";
+			productName = "Circular Transition Animation";
+			productReference = DC8C481F1DB544CD00E628CB /* Circular Transition Animation.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DC8C48171DB544CD00E628CB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Arjun Kodur";
+				TargetAttributes = {
+					DC8C481E1DB544CD00E628CB = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = E696HLUBV9;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = DC8C481A1DB544CD00E628CB /* Build configuration list for PBXProject "Circular Transition Animation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DC8C48161DB544CD00E628CB;
+			productRefGroup = DC8C48201DB544CD00E628CB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DC8C481E1DB544CD00E628CB /* Circular Transition Animation */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DC8C481D1DB544CD00E628CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC8C48301DB544CD00E628CB /* LaunchScreen.storyboard in Resources */,
+				DC8C482D1DB544CD00E628CB /* Assets.xcassets in Resources */,
+				DC8C48281DB544CD00E628CB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DC8C481B1DB544CD00E628CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC5F11921DB67E1F00922699 /* CircularTransition.swift in Sources */,
+				DC8C48381DB5485600E628CB /* SecondViewController.swift in Sources */,
+				DC8C48251DB544CD00E628CB /* ViewController.swift in Sources */,
+				DC8C482B1DB544CD00E628CB /* Circular_Transition_Animation.xcdatamodeld in Sources */,
+				DC8C48231DB544CD00E628CB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DC8C48261DB544CD00E628CB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC8C48271DB544CD00E628CB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DC8C482E1DB544CD00E628CB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC8C482F1DB544CD00E628CB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DC8C48321DB544CD00E628CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DC8C48331DB544CD00E628CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DC8C48351DB544CD00E628CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = E696HLUBV9;
+				INFOPLIST_FILE = "Circular Transition Animation/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.arjunkodur.Circular-Transition-Animation";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		DC8C48361DB544CD00E628CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = E696HLUBV9;
+				INFOPLIST_FILE = "Circular Transition Animation/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.arjunkodur.Circular-Transition-Animation";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DC8C481A1DB544CD00E628CB /* Build configuration list for PBXProject "Circular Transition Animation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC8C48321DB544CD00E628CB /* Debug */,
+				DC8C48331DB544CD00E628CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC8C48341DB544CD00E628CB /* Build configuration list for PBXNativeTarget "Circular Transition Animation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC8C48351DB544CD00E628CB /* Debug */,
+				DC8C48361DB544CD00E628CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DC8C48291DB544CD00E628CB /* Circular_Transition_Animation.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DC8C482A1DB544CD00E628CB /* Circular_Transition_Animation.xcdatamodel */,
+			);
+			currentVersion = DC8C482A1DB544CD00E628CB /* Circular_Transition_Animation.xcdatamodel */;
+			path = Circular_Transition_Animation.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = DC8C48171DB544CD00E628CB /* Project object */;
+}
