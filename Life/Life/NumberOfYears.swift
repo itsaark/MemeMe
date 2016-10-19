@@ -7,3 +7,19 @@
 //
 
 import Foundation
+
+struct Boxes {
+    
+    var dateOfBirth: NSDate
+    
+    func numberOfBoxes() -> Int {
+        
+        let secondsInYear:Double = 365*24*60*60
+        
+        let todaysDate = NSDate()
+        
+        let timeDiffernceInYears = Int((todaysDate.timeIntervalSince(dateOfBirth as Date)/secondsInYear))
+        
+        return timeDiffernceInYears
+    }
+}

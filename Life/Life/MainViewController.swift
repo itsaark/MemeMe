@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MainViewController.swift
 //  Life
 //
 //  Created by Arjun Kodur on 10/16/16.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MainViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,13 +25,15 @@ class ViewController: UIViewController {
     
     @IBAction func datePicked(_ sender: AnyObject) {
         
-        let boxes = Boxes(dateOfBirth: datePicker.date as NSDate)
-        
-        let lifeViewController = storyboard?.instantiateViewController(withIdentifier: "Life") as! LifeViewController
-        lifeViewController.numberOfBoxes = boxes.numberOfBoxes()
-        
         performSegue(withIdentifier: "JumpToLifeViewController", sender: sender)
         
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            
+            let boxes = Boxes(dateOfBirth: datePicker.date as NSDate)
+            let lifeViewController = segue.destination as! LifeViewController
+            lifeViewController.numberOfGreenBoxes = boxes.numberOfBoxes()
         
     }
     

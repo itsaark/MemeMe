@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "7B1210A65EBC29F54F3242C9C0D22A980A544111",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "E6DD0E79A09F4006F9A61877203F2423B455684F" : 9223372036854775807,
+    "7B1210A65EBC29F54F3242C9C0D22A980A544111" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "1EBE72D8-8C55-4E43-A8DF-0C67DE90F337",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "E6DD0E79A09F4006F9A61877203F2423B455684F" : "",
+    "7B1210A65EBC29F54F3242C9C0D22A980A544111" : "iOSProjects\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Circular Transition Animation",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Circular-Transition-Animation\/Circular Transition Animation.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/itsaark\/iOS-projects",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7B1210A65EBC29F54F3242C9C0D22A980A544111"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/itsaark\/CircularTransition-Animation.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E6DD0E79A09F4006F9A61877203F2423B455684F"
+    }
+  ]
+}
