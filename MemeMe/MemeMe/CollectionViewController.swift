@@ -2,7 +2,7 @@
 //  CollectionViewController.swift
 //  MemeMe
 //
-//  Created by Arjun Kodur on 10/15/16.
+//  Created by Arjun Kodur on 10/26/16.
 //  Copyright © 2016 Arjun Kodur. All rights reserved.
 //
 
