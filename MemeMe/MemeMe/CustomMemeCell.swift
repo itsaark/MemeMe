@@ -10,4 +10,5 @@ import UIKit
 
 class CustomMemeCell: UICollectionViewCell {
     
+    @IBOutlet weak var meme: UIImageView!
 }

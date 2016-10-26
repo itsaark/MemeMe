@@ -9,16 +9,30 @@
 import UIKit
 
 class DetailViewController: UIViewController {
+    
+    var meme: UIImage?
+    
+    @IBOutlet weak var memeImage: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        if let memedImage = meme{
+            
+            memeImage.image = memedImage
+        }
         // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    
+    @IBAction func doneButton(_ sender: AnyObject) {
+        
+        self.dismiss(animated: true, completion: nil)
     }
     
 

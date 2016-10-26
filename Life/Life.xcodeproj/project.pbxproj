@@ -316,6 +316,7 @@
 				DCFBEC4E1DB38870008D9D62 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

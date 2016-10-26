@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="7bN-sg-jDl">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -63,7 +63,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1720.8" y="136.28185907046478"/>
+            <point key="canvasLocation" x="1679" y="136"/>
         </scene>
         <!--Life View Controller-->
         <scene sceneID="e3c-KR-5fJ">
@@ -82,8 +82,7 @@
                                 <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" scrollEnabled="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="SnR-71-iaJ">
-                                <frame key="frameInset" minX="8" minY="145" width="359" height="392"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="SnR-71-iaJ">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="5" minimumInteritemSpacing="5" id="DYv-Dv-gdq">
                                     <size key="itemSize" width="27" height="27"/>
@@ -125,12 +124,14 @@
                             <constraint firstItem="Slq-X5-RuC" firstAttribute="top" secondItem="4nC-em-Lsh" secondAttribute="bottom" constant="35" id="akk-2p-yVQ"/>
                             <constraint firstAttribute="trailing" secondItem="SnR-71-iaJ" secondAttribute="trailing" constant="2" id="ds0-jj-8FQ"/>
                             <constraint firstItem="WCZ-OO-ooY" firstAttribute="top" secondItem="SnR-71-iaJ" secondAttribute="bottom" constant="37" id="iEH-gF-mIf"/>
-                            <constraint firstItem="SnR-71-iaJ" firstAttribute="top" secondItem="Slq-X5-RuC" secondAttribute="bottom" constant="40" id="rMj-Fj-VkN"/>
+                            <constraint firstItem="SnR-71-iaJ" firstAttribute="top" secondItem="Slq-X5-RuC" secondAttribute="bottom" constant="20" id="rMj-Fj-VkN"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="r65-n5-a1g"/>
                     <connections>
+                        <outlet property="collectionviewView" destination="SnR-71-iaJ" id="KlB-oB-fmZ"/>
                         <outlet property="quoteLabel" destination="WCZ-OO-ooY" id="0SU-Fl-Nq6"/>
+                        <segue destination="BYZ-38-t0r" kind="showDetail" identifier="JumpToMainVC" id="i7j-fm-jXM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="enz-UP-BUG" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -142,7 +143,8 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7bN-sg-jDl" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1yd-qW-nzJ">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="1yd-qW-nzJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -156,4 +158,7 @@
             <point key="canvasLocation" x="781.60000000000002" y="136.28185907046478"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="i7j-fm-jXM"/>
+    </inferredMetricsTieBreakers>
 </document>

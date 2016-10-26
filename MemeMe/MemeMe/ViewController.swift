@@ -222,30 +222,37 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         return memedImage
     }
     
+    func saveMeme() {
+        
+        let memedImage = generateMemedImage()
+        
+        //Create the meme
+        let meme = Meme(topText: self.topText.text, bottomText: self.bottomText.text, image: self.imagePickerView.image, memedImage: memedImage)
+        
+        // Add it to the memes array in the Application Delegate
+        let object = UIApplication.shared.delegate
+        let appDelegate = object as! AppDelegate
+        appDelegate.memes.append(meme)
+        print("Number of memes is \(appDelegate.memes.count)")
+    }
+
+    
   
     
     @IBAction func actionButtonTapped(_ sender: AnyObject) {
         
         let memedImage = generateMemedImage()
         
+        self.saveMeme()
+        
         let activityVC = UIActivityViewController(activityItems: [memedImage], applicationActivities: nil)
         activityVC.excludedActivityTypes = [UIActivityType.print, UIActivityType.postToWeibo, UIActivityType.copyToPasteboard, UIActivityType.addToReadingList, UIActivityType.postToVimeo]
         
-        self.present(activityVC, animated: true) { 
+        self.present(activityVC, animated: true) {
             
             activityVC.completionWithItemsHandler = { activity, success, items, error in
                 
                 if success {
-                    
-                    func save() {
-                        //Create the meme
-                        let meme = Meme(topText: self.topText.text, bottomText: self.bottomText.text, image: self.imagePickerView.image, memedImage: memedImage)
-                        
-                        // Add it to the memes array in the Application Delegate
-                        let object = UIApplication.shared.delegate
-                        let appDelegate = object as! AppDelegate
-                        appDelegate.memes.append(meme)
-                    }
                     
                     self.dismiss(animated: true, completion: nil)
                 }
@@ -261,6 +268,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         imagePickerView.image = nil
         topText.text = "TOP"
         bottomText.text = "BOTTOM"
+        
+        self.dismiss(animated: true, completion: nil)
     }
     
 }

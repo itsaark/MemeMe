@@ -13,6 +13,13 @@ class LifeViewController: UIViewController, UICollectionViewDelegate, UICollecti
     var numberOfGreenBoxes: Int?
     
     @IBOutlet weak var quoteLabel: UILabel!
+    @IBOutlet weak var collectionviewView: UICollectionView!
+    
+    let greenColor = UIColor(red:0.30, green:0.85, blue:0.39, alpha:1.0)
+
+    
+    fileprivate let sectionInsets = UIEdgeInsets(top: 5.0, left: 5.0, bottom: 5.0, right: 5.0)
+    fileprivate let itemsPerRow: CGFloat = 10
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,14 +27,20 @@ class LifeViewController: UIViewController, UICollectionViewDelegate, UICollecti
         // Do any additional setup after loading the view.
         
         let quote = Quotes()
-        
-        
         self.quoteLabel.text = quote.getOne()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.navigationBar.isHidden = false
+        self.navigationController?.navigationBar.barTintColor = UIColor.white
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "Arrow Left"), style: .plain, target: self, action: #selector(LifeViewController.GoBacktoMainVC))
+        self.navigationItem.leftBarButtonItem?.tintColor = greenColor
+    
+    }
+    
+    func GoBacktoMainVC() {
+        
+        self.navigationController?.popViewController(animated: true)
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -42,20 +55,34 @@ class LifeViewController: UIViewController, UICollectionViewDelegate, UICollecti
         
         if indexPath.row < numberOfGreenBoxes! {
             
-            cell.backgroundColor = UIColor.green
+            cell.backgroundColor = greenColor
         }
         
         return cell
     }
 
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+
+}
+
+extension LifeViewController : UICollectionViewDelegateFlowLayout {
+    //1
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        //2
+        let paddingSpace = sectionInsets.left * (itemsPerRow + 1)
+        let availableWidth = collectionviewView.frame.width - paddingSpace
+        let widthPerItem = availableWidth / itemsPerRow
+        
+        return CGSize(width: widthPerItem, height: widthPerItem)
     }
-    */
-
+    
+    //3
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return sectionInsets
+    }
+    
+    // 4
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat{
+        return sectionInsets.left
+    }
 }
